@@ -33,7 +33,83 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "insert",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"data 1\",\n    \"flag_active\" : \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/products/insert",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"products",
+								"insert"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8001"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:51:47 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:51:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"title\": \"Perhatian\",\n    \"message\": \"Success\"\n}"
+				}
+			]
 		},
 		{
 			"name": "all",
@@ -53,7 +129,74 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/products/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"products",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8001"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:52:11 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:52:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"title\": \"Perhatian\",\n    \"message\": \"Success\",\n    \"info\": {\n        \"total\": 2\n    },\n    \"data\": [\n        {\n            \"id\": 3,\n            \"name\": \"data 1\",\n            \"flag_active\": 1,\n            \"created_at\": \"2022-07-09 18:31:41\",\n            \"updated_at\": \"2022-07-09 18:31:41\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"data 1\",\n            \"flag_active\": 1,\n            \"created_at\": \"2022-07-09 18:51:47\",\n            \"updated_at\": \"2022-07-09 18:51:47\"\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "paging",
@@ -84,7 +227,85 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "paging",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/products/paging?limit=10&page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"products",
+								"paging"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8001"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:53:36 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:53:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"title\": \"Perhatian\",\n    \"message\": \"Success\",\n    \"info\": {\n        \"total\": 2,\n        \"totalPage\": 1,\n        \"page\": 1,\n        \"next\": null,\n        \"prev\": null\n    },\n    \"data\": [\n        {\n            \"id\": 3,\n            \"name\": \"data 1\",\n            \"flag_active\": 1,\n            \"created_at\": \"2022-07-09 18:31:41\",\n            \"updated_at\": \"2022-07-09 18:31:41\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"data 1\",\n            \"flag_active\": 1,\n            \"created_at\": \"2022-07-09 18:51:47\",\n            \"updated_at\": \"2022-07-09 18:51:47\"\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "update",
@@ -101,7 +322,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8001/api/products/update/2",
+					"raw": "localhost:8001/api/products/update/4",
 					"host": [
 						"localhost"
 					],
@@ -110,11 +331,88 @@
 						"api",
 						"products",
 						"update",
-						"2"
+						"4"
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "update",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"data baru\",\n    \"flag_active\" : \"0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/products/update/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"products",
+								"update",
+								"2"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8001"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:52:39 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:52:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": -1,\n    \"title\": \"Perhatian\",\n    \"message\": \"Attempt to assign property \\\"name\\\" on null\"\n}"
+				}
+			]
 		},
 		{
 			"name": "find",
@@ -122,7 +420,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8001/api/products/find/2",
+					"raw": "localhost:8001/api/products/find/3",
 					"host": [
 						"localhost"
 					],
@@ -131,11 +429,79 @@
 						"api",
 						"products",
 						"find",
-						"2"
+						"3"
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "find",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/products/find/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"products",
+								"find",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8001"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:53:13 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:53:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"title\": \"Perhatian\",\n    \"message\": \"Success\",\n    \"info\": {\n        \"total\": 1\n    },\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"data 1\",\n        \"flag_active\": 1,\n        \"created_at\": \"2022-07-09 18:31:41\",\n        \"updated_at\": \"2022-07-09 18:31:41\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "delete",
@@ -143,7 +509,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8001/api/products/delete/2",
+					"raw": "localhost:8001/api/products/delete/3",
 					"host": [
 						"localhost"
 					],
@@ -152,11 +518,79 @@
 						"api",
 						"products",
 						"delete",
-						"2"
+						"3"
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "delete",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/products/delete/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"products",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8001"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:54:10 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 18:54:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 1,\n    \"title\": \"Perhatian\",\n    \"message\": \"Success\"\n}"
+				}
+			]
 		}
 	]
 }
