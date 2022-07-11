@@ -19,6 +19,11 @@ composer update --ignore-platform-reqs
 php artisan key:generate
 ```
 
+- Start Server
+```php
+php artisan serve
+```
+
 ---
 
 ```
