@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 03 Jul 2022 pada 12.03
+-- Waktu pembuatan: 11 Jul 2022 pada 12.10
 -- Versi server: 10.4.21-MariaDB
 -- Versi PHP: 7.4.27
 
@@ -108,7 +108,8 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `flag_active`, `created_at`, `updated_at`) VALUES
-(2, 'data 1', 1, '2022-07-03 02:08:34', '2022-07-03 02:08:34');
+(4, 'data baru', 0, '2022-07-09 11:51:47', '2022-07-09 11:56:24'),
+(5, 'data 1', 1, '2022-07-09 11:56:09', '2022-07-09 11:56:09');
 
 -- --------------------------------------------------------
 
@@ -197,7 +198,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT untuk tabel `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
