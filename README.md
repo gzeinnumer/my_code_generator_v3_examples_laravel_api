@@ -27,5 +27,5 @@ php artisan serve
 ---
 
 ```
-Copyright 2021 M. Fadli Zein
+Copyright 2022 M. Fadli Zein
 ```
