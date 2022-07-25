@@ -1,5 +1,9 @@
 # my_code_generator_v3_examples_laravel_api
 
+Template Code/ Example Code for this generator https://codegenerator.gzeinnumer.com/laravelapi 
+
+---
+
 ## Start From New Project?
 
 - Create Project
@@ -34,12 +38,15 @@ http://localhost:8000/
 
 ---
 
-## Start From This Repo
+## Start From This Repository?
 
 - Just clone it. 
+
 - make database `my_code_generator_v3_examples_laravel_api`.
+
 - Import Database from file.
   - file name `my_code_generator_v3_examples_laravel_api.sql`.
+
 - Setup `.env`.
 ```
 DB_CONNECTION=mysql
@@ -49,7 +56,8 @@ DB_DATABASE=my_code_generator_v3_examples_laravel_api
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-- And run this code in terminal
+
+- And run this code in terminal to download vendor assets
 
 ```
 composer install --ignore-platform-reqs
