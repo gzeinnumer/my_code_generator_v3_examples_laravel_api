@@ -11,9 +11,9 @@ Template Code/ Example Code for this generator https://codegenerator.gzeinnumer.
 composer create-project laravel/laravel your_project_name
 ```
 
-- Make new database `your_database`.
+- Make new database `your_project_name`.
 ```
-CREATE DATABASE databasename;
+CREATE DATABASE your_project_name;
 ```
 
 - Setup `.env`.
@@ -21,9 +21,14 @@ CREATE DATABASE databasename;
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=your_database
+DB_DATABASE=your_project_name
 DB_USERNAME=root
 DB_PASSWORD=
+```
+
+- Migrate Table
+```
+php artisan migrate
 ```
 
 - Start Server
