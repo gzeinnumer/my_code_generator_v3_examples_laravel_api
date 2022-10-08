@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 24 Jul 2022 pada 20.05
+-- Waktu pembuatan: 07 Okt 2022 pada 05.36
 -- Versi server: 10.4.21-MariaDB
 -- Versi PHP: 7.4.27
 
@@ -108,8 +108,16 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `flag_active`, `created_at`, `updated_at`) VALUES
-(4, 'data baru', 0, '2022-07-09 11:51:47', '2022-07-09 11:56:24'),
-(5, 'data 1', 1, '2022-07-09 11:56:09', '2022-07-09 11:56:09');
+(29, 'data 2', 1, '2022-08-04 23:49:02', '2022-08-04 23:49:02'),
+(30, 'data 2', 1, '2022-08-04 23:49:33', '2022-08-04 23:49:33'),
+(31, 'data 2', 1, '2022-08-04 23:49:34', '2022-08-04 23:49:34'),
+(32, 'data 2', 1, '2022-08-04 23:49:42', '2022-08-04 23:49:42'),
+(33, 'data 2', 1, '2022-08-04 23:53:17', '2022-08-04 23:53:17'),
+(34, 'data 2', 1, '2022-08-04 23:53:17', '2022-08-04 23:53:17'),
+(35, 'data 2', 1, '2022-08-04 23:53:19', '2022-08-04 23:53:19'),
+(36, 'data 2', 1, '2022-08-04 23:53:21', '2022-08-04 23:53:21'),
+(37, 'data 2', 1, '2022-08-04 23:53:22', '2022-08-04 23:53:22'),
+(38, 'data 2', 1, '2022-08-04 23:53:22', '2022-08-04 23:53:22');
 
 -- --------------------------------------------------------
 
@@ -198,7 +206,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT untuk tabel `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
